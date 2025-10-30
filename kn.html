@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krish Nekkanti | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            background-color: #f3f4f7;
+            color: #222;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #000000;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h1 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        header span {
+            font-size: 0.9rem;
+            color: #b0d4ff;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 2rem auto;
+            gap: 2rem;
+        }
+
+        .sidebar {
+            background: white;
+            border-radius: 12px;
+            flex: 0.3;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            height: fit-content;
+        }
+
+        .sidebar img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .sidebar p {
+            text-align: center;
+            margin: 0.3rem 0;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .status {
+            text-align: center;
+            margin-top: 0.8rem;
+            font-size: 0.85rem;
+            color: #28a745;
+            font-weight: 600;
+        }
+
+        .content {
+            flex: 0.7;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        section h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            color: #000000;
+            border-bottom: 2px solid #e8f0fb;
+            padding-bottom: 0.4rem;
+        }
+
+        .exp-item,
+        .edu-item {
+            margin-bottom: 1rem;
+        }
+
+        .exp-item h4,
+        .edu-item h4 {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .exp-item span,
+        .edu-item span {
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        .notif {
+            font-size: 0.85rem;
+            background: #004182;
+            padding: 0.3rem 0.7rem;
+            border-radius: 8px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skills-list span {
+            background: #e8f0fb;
+            color: #000000;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .contacts a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 12px;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        .contacts a:hover {
+            color: #000000;
+            transform: translateY(-1px);
+        }
+
+        .contacts p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <img src="IMG_3903.png" alt="Krish Nekkanti Photo" />
+            <h2>Krish Nekkanti</h2>
+            <p>Student at Holmdel High School</p>
+            <p>Junior Squash Athlete</p>
+            <p>Holmdel, NJ</p>
+        </div>
+
+        <div class="content">
+            <section>
+                <h3>About</h3>
+                <p>I’m a student at Holmdel High School and a nationally ranked junior squash athlete. I’m passionate
+                    about computer science, robotics, and building AI-driven projects.</p>
+            </section>
+
+            <section>
+                <h3>Experience</h3>
+                <div class="exp-item">
+                    <h4>Junior Athlete — US Squash</h4>
+                    <span>Sep 2019 - Present · Philadelphia, PA</span>
+                    <p>National Rankings: BU11 #10 | BU13 #10 | BU15 #26</p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Education</h3>
+                <div class="edu-item">
+                    <h4>Holmdel High School</h4>
+                    <span>Sep 2025 - Jun 2029</span>
+                    <p>AP Computer Science, AP Music Theory<br>Activities: Robotics Club, USACO, TSA</p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Skills</h3>
+                <div class="skills-list">
+                    <span>Java</span>
+                    <span>Communication</span>
+                    <span>Problem Solving</span>
+                </div>
+            </section>
+
+            <section>
+                <h3>Contact</h3>
+                <div class="contacts">
+                    <p>Email: <a href="mailto:krish.nekkanti@icloud.com">krish.nekkanti@icloud.com</a></p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/krish-nekkanti-b48398347">LinkedIn</a>
+                        <a href="https://x.com/krishnekkanti_">X</a>
+                        <a href="https://www.instagram.com/krishnekkanti1/">Instagram</a>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Krish Nekkanti — All Rights Reserved
+    </footer>
+</body>
+
+</html>
